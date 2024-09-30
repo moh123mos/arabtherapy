@@ -1,12 +1,14 @@
 <template>
   <div>
     <NavBar />
-    <AskOffer />
+    <HomePage />
+    <FooterComponent />
   </div>
 </template>
 <script setup>
-import AskOffer from "./components/AskOffer.vue";
+import HomePage from "./views/HomePage.vue";
 import NavBar from "./components/NavBar.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 </script>
 
 <style lang="scss">
@@ -26,5 +28,14 @@ body {
 }
 a {
   text-decoration: none;
+}
+.btn-primary {
+  background: #2ab2c2 !important;
+  border-color: #2ab2c2 !important;
+  &:hover {
+    color: #fff;
+    background-color: #2ab2c2;
+    border-color: #2ab2c2;
+  }
 }
 </style>
